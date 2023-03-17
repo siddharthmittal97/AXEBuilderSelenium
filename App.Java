@@ -16,7 +16,7 @@ public class App
     public void amazonAillyTest()
     {
         WebDriver driver = WebDriverManager.chromedriver().create();
-    	driver.get("https://mirketa.com");
+    	driver.get("https://amazon.com");
     	JSONObject responseJson = new AXE.Builder(driver, scriptUrl).analyze();
     	JSONArray violations = responseJson.getJSONArray("violations");
     	if(violations. length() == 0) 
